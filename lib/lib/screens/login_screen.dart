@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:emarista_app/create_account_screen.dart';
 import 'package:emarista_app/main.dart';
 
-class LoginPage extends State<ToLoginPage> {
+class LoginPage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   String? studID;
   String? studName;
@@ -42,10 +42,6 @@ class LoginPage extends State<ToLoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Login"),
-          automaticallyImplyLeading: true,
-        ),
         body: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(
@@ -73,9 +69,10 @@ class LoginPage extends State<ToLoginPage> {
                         child: const Text(
                           'WELCOME BACK MARISTA',
                           style: TextStyle(
-                            fontSize: 64,
+                            fontSize: 25,
                             color: Color.fromARGB(255, 55, 240, 86),
                             fontWeight: FontWeight.bold,
+                          
                           ),
                         ),
                       ),
