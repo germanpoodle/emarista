@@ -20,6 +20,7 @@ class _CreateAccountState extends State<CreateAccount> {
   final _contactNumberController = TextEditingController();
   final _addressController = TextEditingController();
   final _facultyIdController = TextEditingController();
+  
   String _role = 'User'; // Default role
   final _supabaseClient = Supabase.instance.client;
   bool _isPasswordMatch = true;
